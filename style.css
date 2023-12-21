@@ -325,6 +325,141 @@ header {
     gap: 1em;
 }
 
+.customers-container {
+    background: var(--footer-links);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2em 9em;
+}
+
+.customers-logo-container img {
+    object-fit: cover;
+    height: 20em;
+    width: 20em;
+    border-radius: .5em;
+}
+
+.customers-info-container {
+    width: 46.75em;
+}
+
+.customers-info-container .logos-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5em;
+    padding-top: 2em;
+}
+
+.customers-info-container .logos-container a {
+    color: var(--main-green);
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.customers-info-container .logos-container img {
+    aspect-ratio: 3/2;
+}
+
+.customers-info-container p {
+    color: var(--subtitle-grey);
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    padding-bottom: 1em;
+}
+
+.customers-info-container h3 {
+    color: var(--main-green);
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75em;
+}
+
+.customers-info-container span {
+    color: #89939E;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#community-updates-section {
+    padding-top: 3em;
+}
+
+.community-text-container {
+    padding-bottom: 1em;
+    text-align: center;
+    width: 39em;
+    margin: 0 auto;
+}
+
+.community-text-container h2 {
+    color: var(--title-grey);
+    font-size: 2.25em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.community-text-container p {
+    color: var(--subtitle-grey);
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: .5em;
+}
+
+.community-piles-container .community-pile .pile-container {
+    width: 20em;
+    height: 11.25em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+    gap: 1em;
+    background: var(--footer-white);
+    position: absolute;
+    margin-top: -6em;
+    border-radius: .5em;
+    box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.40);
+    margin-left: 1.25em;
+}
+
+.community-piles-container .community-pile .pile-container h4 {
+    color: var(--subtitle-grey);
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 600;
+    height: 5em;
+}
+
+.community-piles-container .community-pile .pile-container a {
+    color: var(--main-green);
+    text-decoration: none;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.community-piles-container .community-pile img {
+    object-fit: cover;
+    width: 22.5em;
+    height: 18em;
+    border-radius: .5em;
+}
+
+.community-piles-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 9em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 @media only screen and (max-width: 1023px) {
     header {
         justify-content: space-between;
@@ -416,6 +551,89 @@ header {
     .unlock-right-container h2 {
         font-size: 1em;
     }
+
+    .achievements-container {
+        padding: 1em 2em;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        width: 100%;
+    }
+
+    .achievements-right-container {
+        gap: 2em;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .achievements-left-container h2 {
+        font-size: 1.5em;
+    }
+
+    .achievements-left-container h4 {
+        font-size: .75em;
+    }
+
+    .achievements-right-container .row {
+        gap: 0em;
+    }
+
+    .achievements-right-container .row .row-item h3 {
+        font-size: 1em;
+    }
+
+    .achievements-right-container .row .row-item p {
+        font-size: .5em;
+    }
+
+    .achievements-right-container .row .row-item img {
+        width: 1.5em;
+    }
+
+    #customers-section {
+        padding-top: 1em;
+    }
+
+    .customers-container {
+        padding: 2em;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .customers-logo-container img {
+        width: 15em;
+        height: 15em;
+    }
+
+    .customers-info-container {
+        width: 100%;
+    }
+
+    .customers-info-container p {
+        font-size: .75em;
+    }
+
+    .customers-info-container h3 {
+        font-size: 1em;
+    }
+
+    .customers-info-container span {
+        font-size: .75em;
+    }
+
+    .customers-info-container .logos-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .customers-info-container .logos-container img {
+        width: 1.75em;
+    }
+
+    .customers-info-container .logos-container a {
+        font-size: .75em;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 599px) {
@@ -476,6 +694,85 @@ header {
 
     .unlock-right-container h2 {
         font-size: 1em;
+    }
+
+    .achievements-container {
+        padding: 1em 2em;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        width: 100%;
+    }
+
+    .achievements-right-container {
+        gap: 2em;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .achievements-left-container h2 {
+        font-size: 2em;
+    }
+
+    .achievements-right-container .row {
+        gap: 0em;
+    }
+
+    .achievements-right-container .row .row-item h3 {
+        font-size: 1.25em;
+    }
+
+    .achievements-right-container .row .row-item p {
+        font-size: .75em;
+    }
+
+    .achievements-right-container .row .row-item img {
+        width: 2em;
+    }
+
+    #customers-section {
+        padding-top: 1em;
+    }
+
+    .customers-container {
+        padding: 2em;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .customers-logo-container img {
+        width: 15em;
+        height: 15em;
+    }
+
+    .customers-info-container {
+        width: 100%;
+    }
+
+    .customers-info-container p {
+        font-size: .75em;
+    }
+
+    .customers-info-container h3 {
+        font-size: 1em;
+    }
+
+    .customers-info-container span {
+        font-size: .75em;
+    }
+
+    .customers-info-container .logos-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .customers-info-container .logos-container img {
+        width: 1.75em;
+    }
+
+    .customers-info-container .logos-container a {
+        font-size: .75em;
     }
 }
 
@@ -543,6 +840,82 @@ header {
     .unlock-right-container h2 {
         font-size: 1.5em;
     }
+
+    .achievements-container {
+        padding: 1em 2em;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .achievements-right-container {
+        gap: 2em;
+    }
+
+    .achievements-left-container h2 {
+        font-size: 2em;
+    }
+
+    .achievements-right-container .row {
+        gap: 0em;
+    }
+
+    .achievements-right-container .row .row-item h3 {
+        font-size: 1.25em;
+    }
+
+    .achievements-right-container .row .row-item p {
+        font-size: .75em;
+    }
+
+    .achievements-right-container .row .row-item img {
+        width: 2em;
+    }
+
+    #customers-section {
+        padding-top: 1em;
+    }
+
+    .customers-container {
+        padding: 2em;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .customers-logo-container img {
+        width: 15em;
+        height: 15em;
+    }
+
+    .customers-info-container {
+        width: 100%;
+    }
+
+    .customers-info-container p {
+        font-size: .75em;
+    }
+
+    .customers-info-container h3 {
+        font-size: 1em;
+    }
+
+    .customers-info-container span {
+        font-size: .75em;
+    }
+
+    .customers-info-container .logos-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .customers-info-container .logos-container img {
+        width: 1.75em;
+    }
+
+    .customers-info-container .logos-container a {
+        font-size: .75em;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 899px) {
@@ -598,6 +971,75 @@ header {
     .unlock-right-container h2 {
         font-size: 1.75em;
     }
+
+    .achievements-container {
+        padding: 1em 2em;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .achievements-right-container {
+        gap: 2em;
+    }
+
+    .achievements-left-container h2 {
+        font-size: 2em;
+    }
+
+    .achievements-right-container .row {
+        gap: 0em;
+    }
+
+    .achievements-right-container .row .row-item h3 {
+        font-size: 1.25em;
+    }
+
+    .achievements-right-container .row .row-item p {
+        font-size: .75em;
+    }
+
+    .achievements-right-container .row .row-item img {
+        width: 2em;
+    }
+
+    .customers-container {
+        padding: 2em;
+        align-items: center;
+    }
+
+    .customers-logo-container img {
+        width: 15em;
+        height: 15em;
+    }
+
+    .customers-info-container {
+        width: 25em;
+    }
+
+    .customers-info-container p {
+        font-size: .75em;
+    }
+
+    .customers-info-container h3 {
+        font-size: 1em;
+    }
+
+    .customers-info-container span {
+        font-size: .75em;
+    }
+
+    .customers-info-container .logos-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .customers-info-container .logos-container img {
+        width: 1.75em;
+    }
+
+    .customers-info-container .logos-container a {
+        font-size: .75em;
+    }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1023px) {
@@ -645,6 +1087,58 @@ header {
     .unlock-right-container h2 {
         font-size: 2em;
     }
+
+    .achievements-container {
+        padding: 1em 2em;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .achievements-right-container {
+        gap: 2em;
+    }
+
+    .achievements-left-container h2 {
+        font-size: 2em;
+    }
+
+    .achievements-right-container .row {
+        gap: 0em;
+    }
+
+    .achievements-right-container .row .row-item h3 {
+        font-size: 1.25em;
+    }
+
+    .achievements-right-container .row .row-item p {
+        font-size: .75em;
+    }
+
+    .achievements-right-container .row .row-item img {
+        width: 2em;
+    }
+
+    .customers-container {
+        padding: 2em;
+        align-items: center;
+    }
+
+    .customers-logo-container img {
+        width: 15em;
+        height: 15em;
+    }
+
+    .customers-info-container {
+        width: 30em;
+    }
+
+    .customers-info-container .logos-container img {
+        width: 2em;
+    }
+
+    .customers-info-container .logos-container a {
+        font-size: .75em;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1919px) {
@@ -679,6 +1173,58 @@ header {
 
     .unlock-right-container h2 {
         font-size: 2.25em;
+    }
+
+    .achievements-container {
+        padding: 1em 2em;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .achievements-right-container {
+        gap: 2em;
+    }
+
+    .achievements-left-container h2 {
+        font-size: 2em;
+    }
+
+    .achievements-right-container .row {
+        gap: 0em;
+    }
+
+    .achievements-right-container .row .row-item h3 {
+        font-size: 1.25em;
+    }
+
+    .achievements-right-container .row .row-item p {
+        font-size: .75em;
+    }
+
+    .achievements-right-container .row .row-item img {
+        width: 2em;
+    }
+
+    .customers-container {
+        padding: 2em;
+        align-items: center;
+    }
+
+    .customers-logo-container img {
+        width: 15em;
+        height: 15em;
+    }
+
+    .customers-info-container {
+        width: 40em;
+    }
+
+    .customers-info-container .logos-container img {
+        width: 2em;
+    }
+
+    .customers-info-container .logos-container a {
+        font-size: .75em;
     }
 }
 
