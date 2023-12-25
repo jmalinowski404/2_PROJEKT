@@ -16,6 +16,10 @@
     overflow-x: hidden;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -57,6 +61,14 @@ header {
     cursor: pointer;
 }
 
+.btn-primary:hover {
+    padding: 10px 24px;
+    background: #fff;
+    border: 1px #4CAF4F solid;
+    color: #4CAF4F;
+    transition: all .5s;
+}
+
 .btn-secondary {
     padding: 10px 20px;
     align-items: center;
@@ -66,6 +78,13 @@ header {
     border-radius: 6px;
     color: var(--main-green);
     cursor: pointer;
+}
+
+.btn-secondary:hover {
+    padding: 10px 24px;
+    background: #fff;
+    border: 1px #4CAF4F solid;
+    transition: all .5s;
 }
 
 #hero-section {
@@ -460,6 +479,114 @@ header {
     justify-content: space-evenly;
 }
 
+#frame-16 {
+    margin-top: 8em;
+    background-color: var(--footer-links);
+}
+
+#frame-16 .text-container {
+    padding: 2em 0em;
+    text-align: center;
+}
+
+#frame-16 .text-container h2 {
+    color: #263238;
+    font-size: 4em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#frame-16 .text-container button {
+    margin-top: 2em;
+}
+
+footer {
+    background: #263238;
+}
+
+footer .footer-container {
+    padding: 4em 11em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer .footer-container .right-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+footer .footer-container .right-footer .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+footer .footer-container .left-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+footer .footer-container .left-footer .footer-copy {
+    color: var(--footer-links);
+    font-size: .875em;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+footer .footer-container .left-footer .footer-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+footer .footer-container .right-footer h4 {
+    color: var(--footer-white);
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+footer .footer-container .right-footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+}
+
+footer .footer-container .right-footer a {
+    text-decoration: none;
+    color: var(--footer-links);
+    font-size: .875em;
+    font-style: normal;
+    font-weight: 400;
+}
+
+footer .footer-container .right-footer .icon {
+    padding-right: 1.5em;
+    background: url(./img/send-icon.svg) no-repeat right;
+    background-size: 1.25em;
+}
+
+footer .footer-container .right-footer input {
+    border: none;
+    border-radius: .25em;
+    background: var(); 
+    padding: .5em 0em .5em .75em;
+    color: #fff;
+}
+
+footer .footer-container .right-footer input:focus {
+    outline: none;
+    border: 1px var(--subtitle-grey) solid;
+    padding: 1em 0em 1em 1.5em;
+    transition: all 1s ease-in-out;
+}
+
 @media only screen and (max-width: 1023px) {
     header {
         justify-content: space-between;
@@ -634,6 +761,52 @@ header {
     .customers-info-container .logos-container a {
         font-size: .75em;
     }
+
+    .community-piles-container {
+        padding: 0;
+        flex-wrap: wrap;
+        gap: 5em;
+    }
+
+    .community-piles-container .community-pile img {
+        aspect-ratio: 5/4;
+        width: 18em;
+    }
+
+    .community-piles-container .community-pile .pile-container {
+        width: 15.5em;
+        height: 9em;
+    }
+
+    .community-piles-container .community-pile .pile-container h4 {
+        font-size: 1em;
+    }
+
+    .community-piles-container .community-pile .pile-container a {
+        font-size: .9em;
+    }
+
+    .community-text-container {
+        width: 100%;
+        padding: 0 1em 2em 1em;
+    }
+
+    #frame-16 .text-container h2 {
+        font-size: 2em;
+    }
+
+    footer .footer-container {
+        padding-left: .5em;
+        padding-right: 0;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        flex-grow: 1;
+        gap: 3em;
+    }
+
+    footer .footer-container .right-footer {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 599px) {
@@ -773,6 +946,52 @@ header {
 
     .customers-info-container .logos-container a {
         font-size: .75em;
+    }
+
+    .community-piles-container {
+        padding: 0;
+        flex-wrap: wrap;
+        gap: 5em;
+    }
+
+    .community-piles-container .community-pile img {
+        aspect-ratio: 5/4;
+        width: 18em;
+    }
+
+    .community-piles-container .community-pile .pile-container {
+        width: 15.5em;
+        height: 9em;
+    }
+
+    .community-piles-container .community-pile .pile-container h4 {
+        font-size: 1em;
+    }
+
+    .community-piles-container .community-pile .pile-container a {
+        font-size: .9em;
+    }
+
+    .community-text-container {
+        width: 100%;
+        padding: 0 1em 2em 1em;
+    }
+
+    #frame-16 .text-container h2 {
+        font-size: 3em;
+    }
+
+    footer .footer-container {
+        padding-left: .5em;
+        padding-right: 0;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        flex-grow: 1;
+        gap: 3em;
+    }
+
+    footer .footer-container .right-footer {
+        flex-direction: column;
     }
 }
 
@@ -916,6 +1135,44 @@ header {
     .customers-info-container .logos-container a {
         font-size: .75em;
     }
+
+    .community-piles-container {
+        padding: 0;
+        flex-wrap: wrap;
+        gap: 5em;
+    }
+
+    .community-piles-container .community-pile img {
+        aspect-ratio: 5/4;
+        width: 18em;
+    }
+
+    .community-piles-container .community-pile .pile-container {
+        width: 15.5em;
+        height: 9em;
+    }
+
+    .community-piles-container .community-pile .pile-container h4 {
+        font-size: 1em;
+    }
+
+    .community-piles-container .community-pile .pile-container a {
+        font-size: .9em;
+    }
+
+    .community-text-container {
+        width: 100%;
+        padding: 0 1em 2em 1em;
+    }
+
+    footer .footer-container {
+        padding-left: 0;
+        padding-right: 0;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        flex-grow: 1;
+        gap: 3em;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 899px) {
@@ -1040,6 +1297,35 @@ header {
     .customers-info-container .logos-container a {
         font-size: .75em;
     }
+
+    .community-piles-container {
+        padding: 0;
+        flex-wrap: wrap;
+        gap: 5em;
+    }
+
+    .community-piles-container .community-pile img {
+        aspect-ratio: 5/4;
+        width: 18em;
+    }
+
+    .community-piles-container .community-pile .pile-container {
+        width: 15.5em;
+        height: 9em;
+    }
+
+    .community-piles-container .community-pile .pile-container h4 {
+        font-size: 1em;
+    }
+
+    .community-piles-container .community-pile .pile-container a {
+        font-size: .9em;
+    }
+
+    footer .footer-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1023px) {
@@ -1139,6 +1425,33 @@ header {
     .customers-info-container .logos-container a {
         font-size: .75em;
     }
+
+    .community-piles-container {
+        padding: 0;
+    }
+
+    .community-piles-container .community-pile img {
+        aspect-ratio: 5/4;
+        width: 15em;
+    }
+
+    .community-piles-container .community-pile .pile-container {
+        width: 12.5em;
+        height: 9em;
+    }
+
+    .community-piles-container .community-pile .pile-container h4 {
+        font-size: .8em;
+    }
+
+    .community-piles-container .community-pile .pile-container a {
+        font-size: .9em;
+    }
+    
+    footer .footer-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1919px) {
@@ -1225,6 +1538,32 @@ header {
 
     .customers-info-container .logos-container a {
         font-size: .75em;
+    }
+
+    .community-piles-container {
+        padding: 0;
+    }
+
+    .community-piles-container .community-pile img {
+        aspect-ratio: 5/4;
+        width: 18em;
+    }
+
+    .community-piles-container .community-pile .pile-container {
+        width: 15.5em;
+    }
+
+    .community-piles-container .community-pile .pile-container h4 {
+        font-size: 1.1em;
+    }
+
+    .community-piles-container .community-pile .pile-container a {
+        font-size: 1.1em;
+    }
+
+    footer .footer-container {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
