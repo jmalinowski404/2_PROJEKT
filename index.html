@@ -34,6 +34,16 @@
         </div>
         
     </header>
+    <div id="mobile-nav-links" class="mobile-nav-links hidden">
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#community-section">Service</a></li>
+            <li><a href="#community-updates-section">Feature</a></li>
+            <li><a href="#unlock-section">Product</a></li>
+            <li><a href="#customers-section">Testimonial</a></li>
+            <li><a href="#frame-16">FAQ</a></li>
+        </ul>
+    </div>
     <main>
         <section id="hero-section">
             <div class="hero-container">
@@ -273,7 +283,9 @@
             var mobileNav = document.getElementById("mobile-nav-links");
             if (mobileNav.classList.contains("hidden")) {
                 mobileNav.classList.remove("hidden");
-            } else {
+                mobileNav.classList.add("shown");
+            } else if (mobileNav.classList.contains("shown")) {
+                mobileNav.classList.remove("shown");
                 mobileNav.classList.add("hidden");
             }
         }

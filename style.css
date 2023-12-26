@@ -27,6 +27,48 @@ header {
     align-items: center;
     padding: 2em 0 2em 0;
     background: var(--footer-links);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: flex;
+}
+
+.mobile-nav-links {
+    position: fixed;
+    background: var(--footer-links);
+    width: 100%;
+    text-align: center;
+    z-index: 50;
+    margin-top: 6.25em;
+}
+
+.mobile-nav-links ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding: 4em 0 4em 0;
+}
+
+.mobile-nav-links ul a {
+    text-decoration: none;
+    color: #18191F;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.mobile-nav-links ul li:hover {
+    scale: 1.2;
+    filter: drop-shadow(0 0 .75em rgba(0, 0, 0, 0.5));
+    transition: all .5s ease;
 }
 
 .nav-container ul {
@@ -89,6 +131,8 @@ header {
 
 #hero-section {
     background: var(--footer-links);
+    margin-top: 6.25em;
+    z-index: 999;
 }
 
 .hero-container {
@@ -147,6 +191,17 @@ header {
 
 .active {
     opacity: 1;
+}
+
+#hero-section .hero-container .right-container img:hover {
+    scale: .95;
+    transform: translateY(-.5em);
+    background-image: url(./img/blob.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(.25em);
+    transition: all 1.5s ease;
 }
 
 #clients-section {
@@ -252,6 +307,18 @@ header {
 
 .unlock-left-container img {
     padding: 3.25em 0;
+}
+
+.unlock-left-container img:hover {
+    scale: .95;
+    transform: translateY(-.5em);
+    background-image: url(./img/blob.png);
+    background-position: center;
+    background-size: contain;
+    backdrop-filter: blur(.25em);
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 .25rem rgba(0, 0, 0, 0.5));
+    transition: all 1.5s ease;
 }
 
 .unlock-right-container {
@@ -442,6 +509,7 @@ header {
     gap: 1em;
     background: var(--footer-white);
     position: absolute;
+    z-index: 1;
     margin-top: -6em;
     border-radius: .5em;
     box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.40);
